@@ -1,0 +1,79 @@
+\documentclass{amsart}
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+\begin{document}
+%
+%=================================================================
+%
+\title[Huang's]{The report of flip01 final presentation}%
+
+\author{Guanzhang Huang}
+\address[A.~1]{School of Computer Science,\\ 
+Xi'an Shiyou University, Shaanxi 710065, China}%
+\email[A.~1]{xxx@tulip.academy}
+
+%\author{Gang Li}
+%\address[A.~2]{School of Information Technology \\
+%Deakin University, Geelong, VIC 3216, Australia}%
+%\email[A.~2]{gang.li@deakin.edu.au}
+
+
+%\author{Author 3}
+%\address[A.~3]{School of Information Technology \\
+%Deakin University \\
+%Vic 3125, Australia}%
+%\email[A.~3]{xxx@deakin.edu.au}
+
+%\thanks{Thanks to \ldots}%
+\subjclass{Artificial Intelligence}%
+\keywords{Machine Learning, Data Mining, ...}%
+\date{\gitAuthorDate}%
+
+\begin{abstract}
+    This paper is divided into five parts, 
+    the first part mainly introduces the relevant 
+    introduction of this paper.
+    The second part is the data preparation before the experiment, 
+    the third part is the experiment part, t
+    he fourth part and the fifth part is the summary and 
+    analysis of this paper.
+\end{abstract}
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{mainbody}
+
+% ----------------------------------------------------------------
+\newpage
+\bibliography{tuliplab,yourbib}
+\bibliographystyle{plain}
+%=================================================================
+
+\listoftodos
+
+\end{document}
+
